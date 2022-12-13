@@ -1,0 +1,1583 @@
+{
+    "animals": [{
+            "name": "Polar bear",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "-",
+            "order": "Carnivora",
+            "family": "Ursidae",
+            "genus": "Ursus",
+            "scientificname": "Ursus maritimus"
+        },
+        {
+            "name": "Sun bear",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Ursidae",
+            "genus": "Helarctos",
+            "scientificname": "Helarctos malayanus"
+        },
+        {
+            "name": "Black Wasp",
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "classname": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Sphecidae",
+            "genus": "Sphex",
+            "scientificname": "Sphex pensylvanicus"
+        },
+        {
+            "name": "Buffalo",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Syncerus",
+            "scientificname": "Syncerus caffer"
+        },
+        {
+            "name": "Monarch Butterfly",
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "classname": "Insecta",
+            "order": "Lepidoptera",
+            "family": "Nymphalidae",
+            "genus": "Danaus",
+            "scientificname": "Danaus plexippus"
+        },
+        {
+            "name": "White Butterfly",
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "classname": "Insecta",
+            "order": "Lepidoptera",
+            "family": "Pieridae",
+            "genus": "Pieris",
+            "scientificname": "Pieris rapae"
+        },
+        {
+            "name": "Abyssinian",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Felis",
+            "scientificname": "Felis catus"
+        },
+        {
+            "name": "Australian Mist",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Felis",
+            "scientificname": "Felis catus"
+        },
+        {
+            "name": "Cobra",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Elapidae",
+            "genus": "Ophiophagus",
+            "scientificname": "Ophiophagus hannah"
+        },
+        {
+            "name": "Indian Cobra",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Elapidae",
+            "genus": "Naja",
+            "scientificname": "Naja naja"
+        },
+        {
+            "name": "Snouted Cobra",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Elapidae",
+            "genus": "Naja",
+            "scientificname": "Naja annulifera"
+        },
+        {
+            "name": "Cockroach",
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "classname": "Insecta",
+            "order": "Blattaria",
+            "family": "-",
+            "genus": "-",
+            "scientificname": "Blattaria"
+        },
+        {
+            "name": "Cow",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Bos",
+            "scientificname": "Bos taurus"
+        },
+        {
+            "name": "Crocodile",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Crocodilia",
+            "family": "Crocodylidae",
+            "genus": "Crocodylus",
+            "scientificname": "Crocodylus acutus"
+        },
+        {
+            "name": "Nile Crocodile",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Crocodilia",
+            "family": "Crocodylidae",
+            "genus": "Crocodylus",
+            "scientificname": "Crocodylus niloticus"
+        },
+        {
+            "name": "Roe Deer",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Cervidae",
+            "genus": "Capreolus",
+            "scientificname": "Capreolus capreolus"
+        },
+        {
+            "name": "Deer",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Cervidae",
+            "genus": "-",
+            "scientificname": "Odocoileus virginiana"
+        },
+        {
+            "name": "CKey Deerow",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Cervidae",
+            "genus": "Odocoileus",
+            "scientificname": "Odocoileus virginianus"
+        },
+        {
+            "name": "Cow",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Bos",
+            "scientificname": "Bos taurus"
+        },
+        {
+            "name": "Fallow deer",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Cervidae",
+            "genus": "Dama",
+            "scientificname": "Dama dama"
+        },
+        {
+            "name": "Canaan Dog",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Carolina Dog",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Basenji Dog",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Boxer Dog",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Anatolian Shepherd Dog",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Canadian Eskimo",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Raccoon Dog",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Nyctereutes",
+            "scientificname": "Nyctereutes procyonoides"
+        },
+        {
+            "name": "Eskimo Dog",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Appenzeller Dog",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Bolognese Dog",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Harrier",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Havanese",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Huskador",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Huskita",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Husky",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Huskydoodle",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Husky Jack",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Ainu",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Akita Shepherd",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Afghan Hound",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Affenpinscher",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Airedale Terrier",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Sumatran Elephant",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Elephantidae",
+            "genus": "Elephas",
+            "scientificname": "Elephas maximus sumatranus"
+        },
+        {
+            "name": "Bald Eagle",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Accipitriformes",
+            "family": "Accipitridae",
+            "genus": "Haliaeetus",
+            "scientificname": "Haliaeetus leucocephalus"
+        },
+        {
+            "name": "White-Tailed Eagle",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Accipitriformes",
+            "family": "Accipitridae",
+            "genus": "Haliaeetus",
+            "scientificname": "Haliaeetus albicilla"
+        },
+        {
+            "name": "Harpy Eagle",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Accipitriformes",
+            "family": "Accipitridae",
+            "genus": "Harpia",
+            "scientificname": "Harpia harpyja"
+        },
+        {
+            "name": "Sri Lankan Elephant",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Elephantidae",
+            "genus": "Elephas",
+            "scientificname": "Elephas maximus maximus"
+        },
+        {
+            "name": "Borneo Elephant",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Elephantidae",
+            "genus": "Elephas",
+            "scientificname": "Elephas maximus borneensis"
+        },
+        {
+            "name": "African Bush Elephant",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Elephantidae",
+            "genus": "Loxodonta",
+            "scientificname": "Loxodonta africana africana"
+        },
+        {
+            "name": "Pike Fish",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Actinopterygii",
+            "order": "Esociformes",
+            "family": "Esocidae",
+            "genus": "Esox",
+            "scientificname": "Esox"
+        },
+        {
+            "name": "Butterfly Fish",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Actinopterygii",
+            "order": "Perciformes",
+            "family": "Chaetodontidae",
+            "genus": "-",
+            "scientificname": "Chaetodontidae"
+        },
+        {
+            "name": "Bonito Fish",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Actinopterygii",
+            "order": "Scombriformes",
+            "family": "Scombridae",
+            "genus": "Sarda",
+            "scientificname": "Sarda chiliensis"
+        },
+        {
+            "name": "Scorpion Fish",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Actinopterygii",
+            "order": "Scorpaeniformes",
+            "family": "Scorpaenidae",
+            "genus": "-",
+            "scientificname": "Scorpaenidae"
+        },
+        {
+            "name": "Drum Fish",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Actinopterygii",
+            "order": "Perciformes",
+            "family": "Sciaenidae",
+            "genus": "-",
+            "scientificname": "Sciaenidae"
+        },
+        {
+            "name": "Walleye Fish",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Actinopterygii",
+            "order": "Perciformes",
+            "family": "Percidae",
+            "genus": "Sander",
+            "scientificname": "Sander vitreus"
+        },
+        {
+            "name": "Swai Fish",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Actinopterygii",
+            "order": "Siluriformes",
+            "family": "Pangasiidae",
+            "genus": "Pangasianodon",
+            "scientificname": "Pangasianodon hypophthalmus"
+        },
+        {
+            "name": "Koi Fish",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Actinopterygii",
+            "order": "Cypriniformes",
+            "family": "Cyprinidae",
+            "genus": "Cyprinus",
+            "scientificname": "Cyprinus rubrofuscus"
+        },
+        {
+            "name": "Siamese Fighting Fish",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Actinopterygii",
+            "order": "Perciformes",
+            "family": "Osphronemidae",
+            "genus": "Betta",
+            "scientificname": "Betta splendens"
+        },
+        {
+            "name": "Fluke Fish",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Actinopterygii",
+            "order": "Pleuronectiformes",
+            "family": "Paralichthyidae",
+            "genus": "Paralichthys",
+            "scientificname": "Paralichthys dentatus"
+        },
+        {
+            "name": "Red Fox",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Canidae",
+            "genus": "Vulpes",
+            "scientificname": "Vulpes vulpes"
+        },
+        {
+            "name": "Gharial",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Crocodilia",
+            "family": "Gavialidae",
+            "genus": "Gavialis",
+            "scientificname": "Gavialis gangeticus"
+        },
+        {
+            "name": "Giraffe",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Giraffidae",
+            "genus": "Giraffa",
+            "scientificname": "Giraffa camelopardalis"
+        },
+        {
+            "name": "Barn Owl",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Strigiformes",
+            "family": "Tytonidae",
+            "genus": "Tyto",
+            "scientificname": "Tyto alba"
+        },
+        {
+            "name": "Hippopotamus",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Hippopotamidae",
+            "genus": "Hippopotamus",
+            "scientificname": "Hippopotamus amphibius"
+        },
+        {
+            "name": "Pygmy Hippopotamus",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Hippopotamidae",
+            "genus": "Hippopotamus",
+            "scientificname": "Choeropsis liberiensis"
+        },
+        {
+            "name": "Horse",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Perissodactyla",
+            "family": "Equidae",
+            "genus": "Equus",
+            "scientificname": "Equus caballus"
+        },
+        {
+            "name": "Canadian Horse",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Perissodactyla",
+            "family": "Equidae",
+            "genus": "Equus",
+            "scientificname": "Equus ferus caballus"
+        },
+        {
+            "name": "Hawaiian Crow",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Passeriformes",
+            "family": "Corvidae",
+            "genus": "Corvus",
+            "scientificname": "Corvus hawaiiensis"
+        },
+        {
+            "name": "House wren",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Passeriformes",
+            "family": "Troglodytidae",
+            "genus": "Troglodytes",
+            "scientificname": "Troglodytes aedon"
+        },
+        {
+            "name": "Housefly",
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "classname": "Insecta",
+            "order": "Diptera",
+            "family": "Muscidae",
+            "genus": "Musca",
+            "scientificname": "Musca domestica"
+        },
+        {
+            "name": "House Mouse",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Rodentia",
+            "family": "Muridae",
+            "genus": "Mus",
+            "scientificname": "Mus musculus"
+        },
+        {
+            "name": "Grasshopper Mouse",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Rodentia",
+            "family": "Cricetidae",
+            "genus": "Onychomys",
+            "scientificname": "Onychomys leucogaster"
+        },
+        {
+            "name": "House Sparrow",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Passeriformes",
+            "family": "Passeridae",
+            "genus": "Passer",
+            "scientificname": "Passer domesticus"
+        },
+        {
+            "name": "Song Sparrow",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Passeriformes",
+            "family": "Passerelidae",
+            "genus": "Melospiza",
+            "scientificname": "Melospiza melodia"
+        },
+        {
+            "name": "Frilled Lizard",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Agamidae",
+            "genus": "Chlamydosaurus",
+            "scientificname": "Chlamydosaurus kingii"
+        },
+        {
+            "name": "Common House Spider",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Arachnida",
+            "order": "aranae",
+            "family": "Theridiidae",
+            "genus": "Parasteatoda",
+            "scientificname": "Parasteatoda tepidariorum"
+        },
+        {
+            "name": "Monitor Lizard",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Varanidae",
+            "genus": "Varanus",
+            "scientificname": "Varanus"
+        },
+        {
+            "name": "Draco Volans Lizard",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Agamidae",
+            "genus": "Draco",
+            "scientificname": "Draco volans"
+        },
+        {
+            "name": "Glass Lizard",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Anguidae",
+            "genus": "Ophisaurus",
+            "scientificname": "Ophisaurus"
+        },
+        {
+            "name": "Horned Lizard",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Phrynosomatidae",
+            "genus": "Phrynosoma",
+            "scientificname": "Phrynosoma"
+        },
+        {
+            "name": "Leopard Lizard",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Crotaphytidae",
+            "genus": "Gambelia",
+            "scientificname": "Gambelia wislizenii"
+        },
+        {
+            "name": "Senegal Parrot",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Psittaciformes",
+            "family": "Psittacidae",
+            "genus": "Poicephalus",
+            "scientificname": "Poicephalus senegalus"
+        },
+        {
+            "name": "Amazon Parrot",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Psittaciformes",
+            "family": "Psittacidae",
+            "genus": "Amazona",
+            "scientificname": "Amazona"
+        },
+        {
+            "name": "African Grey Parrot",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Psittaciformes",
+            "family": "Psittacidae",
+            "genus": "Psittacus",
+            "scientificname": "Psittacus erithacus"
+        },
+        {
+            "name": "Blood Python",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Pythonidae",
+            "genus": "Brongersmai",
+            "scientificname": "Python brongersmai"
+        },
+        {
+            "name": "Burmese Python",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Pythonidae",
+            "genus": "Python",
+            "scientificname": "Python bivittatus"
+        },
+        {
+            "name": "Indian Rhinoceros",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Perissodactyla",
+            "family": "Rhinocerotidae",
+            "genus": "Rhinoceros",
+            "scientificname": "Rhinoceros unicornis"
+        },
+        {
+            "name": "Star-nosed mole",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Eulipotyphla",
+            "family": "Talpidae",
+            "genus": "Condylura",
+            "scientificname": "Condylura cristata"
+        },
+        {
+            "name": "Indian Star Tortoise",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Testudines",
+            "family": "Testudinidae",
+            "genus": "Geochelone",
+            "scientificname": "Geochelone elegans"
+        },
+        {
+            "name": "Panther",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientificname": "Panthera pardus, Panthera onca"
+        },
+        {
+            "name": "Florida Panther",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Puma",
+            "scientificname": "Puma concolor couguar"
+        },
+        {
+            "name": "Leopard",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientificname": "Panthera pardus"
+        },
+        {
+            "name": "Snow Leopard",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientificname": "Panthera uncia"
+        },
+        {
+            "name": "Catahoula Leopard",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Leopard Cat",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Prionailurus",
+            "scientificname": "Prionailurus bengalensis"
+        },
+        {
+            "name": "Monkey",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Primates",
+            "family": "Cebidae",
+            "genus": "Macaca",
+            "scientificname": "Macaca fascicularis"
+        },
+        {
+            "name": "Vervet Monkey",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Chlorocebus",
+            "scientificname": "Chlorocebus pygerythrus"
+        },
+        {
+            "name": "Squirrel Monkey",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Primates",
+            "family": "Cebidae",
+            "genus": "Saimiri",
+            "scientificname": "Saimiri"
+        },
+        {
+            "name": "Proboscis Monkey",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Nasalis",
+            "scientificname": "Nasalis larvatus"
+        },
+        {
+            "name": "Patas Monkey",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Erythrocebus",
+            "scientificname": "Erythrocebus patas"
+        },
+        {
+            "name": "Woolly Monkey",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Primates",
+            "family": "Atelidae",
+            "genus": "Lagothrix",
+            "scientificname": "Lagothrix lagotricha"
+        },
+        {
+            "name": "Howler Monkey",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Primates",
+            "family": "Atelidae",
+            "genus": "Alouatta",
+            "scientificname": "Alouatta"
+        },
+        {
+            "name": "Spider Monkey",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Primates",
+            "family": "Atelidae",
+            "genus": "Ateles",
+            "scientificname": "Ateles fusciceps"
+        },
+        {
+            "name": "Pygmy Marmoset (Finger Monkey)",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Primates",
+            "family": "Callitrichidae",
+            "genus": "Cebuella",
+            "scientificname": "Cebuella pygmaea"
+        },
+        {
+            "name": "Lion",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientificname": "Panthera leo"
+        },
+        {
+            "name": "Mountain Lion",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Puma",
+            "scientificname": "Puma concolor"
+        },
+        {
+            "name": "Cape Lion",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientificname": "Panthera leo melanochaitus"
+        },
+        {
+            "name": "Sea Lion",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Otariidae",
+            "genus": "-",
+            "scientificname": "Otariidae"
+        },
+        {
+            "name": "Golden Lion Tamarin",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Primates",
+            "family": "Callitrichidae",
+            "genus": "Leontopithecus",
+            "scientificname": "Leontopithecus rosalia"
+        },
+        {
+            "name": "Peacock Butterfly",
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "classname": "Insecta",
+            "order": "Lepidoptera",
+            "family": "Nymphalidae",
+            "genus": "Aglais",
+            "scientificname": "Aglais io"
+        },
+        {
+            "name": "Peacock",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Galliformes",
+            "family": "Phasianidae",
+            "genus": "Pavo",
+            "scientificname": "Pavo cristatus"
+        },
+        {
+            "name": "Pig",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Suidae",
+            "genus": "Sus",
+            "scientificname": "Sus scrofa scrofa"
+        },
+        {
+            "name": "Guinea Pig",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Caviidae",
+            "family": "Suidae",
+            "genus": "Cavia",
+            "scientificname": "Cavia porcellus"
+        },
+        {
+            "name": "Rabbit",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Lagomorpha",
+            "family": "Leporidae",
+            "genus": "Oryctolagus",
+            "scientificname": "Oryctolagus cuniculus"
+        },
+        {
+            "name": "Rat",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Rodentia",
+            "family": "Muridae",
+            "genus": "Rattus",
+            "scientificname": "Rattus rattus"
+        },
+        {
+            "name": "Texas Rat Snake",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Colubridae",
+            "genus": "Pantherophis",
+            "scientificname": "Pantherophis obsoletus lindheimeri"
+        },
+        {
+            "name": "Eastern Rat snake",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Colubridae",
+            "genus": "Pantherophis",
+            "scientificname": "Pantherophis alleghaniensis"
+        },
+        {
+            "name": "Australian Cattle Dog",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Garter Snake",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Colubridae",
+            "genus": "Thamnophis",
+            "scientificname": "Thamnophis sirtalis"
+        },
+        {
+            "name": "Pine Snake",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Colubridae",
+            "genus": "Pituophis",
+            "scientificname": "Pituophis melanoleucus"
+        },
+        {
+            "name": "Bushmaster Snake",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Viperidae",
+            "genus": "Lachesis",
+            "scientificname": "Lachesis acrochorda"
+        },
+        {
+            "name": "Milk Snake",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Colubridae",
+            "genus": "Lampropeltis",
+            "scientificname": "Lampropeltis triangulum"
+        },
+        {
+            "name": "Twig Snake",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Colubridae",
+            "genus": "Thelotornis",
+            "scientificname": "Thelotornis capensis"
+        },
+        {
+            "name": "Sharp-Tailed Snake",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Colubridae",
+            "genus": "Contia",
+            "scientificname": "Contia tenuis"
+        },
+        {
+            "name": "Banded Water Snake",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Colubridae",
+            "genus": "Nerodia",
+            "scientificname": "Nerodia fasciata"
+        },
+        {
+            "name": "Northern Water Snake",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Serpentes",
+            "genus": "Nerodia",
+            "scientificname": "Nerodia sipedon"
+        },
+        {
+            "name": "Rough Green Snake",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Reptilia",
+            "order": "Squamata",
+            "family": "Colubridae",
+            "genus": "Opheodrys",
+            "scientificname": "Opheodrys aestivus"
+        },
+        {
+            "name": "Black Rhinoceros",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Perissodactyla",
+            "family": "Rhinocerotidae",
+            "genus": "Diceros",
+            "scientificname": "Diceros bicornis"
+        },
+        {
+            "name": "White Rhinoceros",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Perissodactyla",
+            "family": "Rhinocerotidae",
+            "genus": "Ceratotherium",
+            "scientificname": "Ceratotherium simum"
+        },
+        {
+            "name": "Sumatran Rhinoceros",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Perissodactyla",
+            "family": "Rhinocerotidae",
+            "genus": "Dicerorhinus",
+            "scientificname": "Dicerorhinus sumatrensis"
+        },
+        {
+            "name": "Sheep",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Ovis",
+            "scientificname": "Ovis aries"
+        },
+        {
+            "name": "Bighorn Sheep",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Ovis",
+            "scientificname": "Ovis canadensis"
+        },
+        {
+            "name": "Crane",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Gruiformes",
+            "family": "Gruidae",
+            "genus": "-",
+            "scientificname": "Gruidae"
+        },
+        {
+            "name": "Siberian Tiger",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientificname": "Panthera tigris altaica"
+        },
+        {
+            "name": "Whooping Crane",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Gruiformes",
+            "family": "Gruidae",
+            "genus": "Grus",
+            "scientificname": "Grus americana"
+        },
+        {
+            "name": "Cane Corso",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Redback Spider",
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "classname": "Arachnida",
+            "order": "aranae",
+            "family": "Theridiidae",
+            "genus": "Latrodectus",
+            "scientificname": "Latrodectus hasselti"
+        },
+        {
+            "name": "Writing Spider",
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "classname": "Arachnida",
+            "order": "Araneae",
+            "family": "Araneidae",
+            "genus": "Argiope",
+            "scientificname": "Argiope aurantia"
+        },
+        {
+            "name": "Wolf Spider",
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "classname": "Arachnida",
+            "order": "Araneae",
+            "family": "Lycosidae",
+            "genus": "-",
+            "scientificname": "-"
+        },
+        {
+            "name": "South China Tiger",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Araneae",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientificname": "Panthera tigris amoyensis"
+        },
+        {
+            "name": "Tiger Shark",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Chondrichthyes",
+            "order": "Carcharhiniformes",
+            "family": "Carcharhinidae",
+            "genus": "Galeocerdo",
+            "scientificname": "Galeocerdo cuvier"
+        },
+        {
+            "name": "Bengal Tiger",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientificname": "Panthera tigris tigris"
+        },
+        {
+            "name": "White Tiger",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientificname": "Panthera tigris tigris"
+        },
+        {
+            "name": "Malayan Tiger",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientificname": "Panthera tigris jacksoni"
+        },
+        {
+            "name": "Tiger Moth",
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "classname": "Insecta",
+            "order": "Lepidoptera",
+            "family": "Erebidae",
+            "genus": "Arctia",
+            "scientificname": "Arctia caja"
+        },
+        {
+            "name": "Sumatran Tiger",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientificname": "Panthera tigris sumatrae"
+        },
+        {
+            "name": "Wild Boar",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Suidae",
+            "genus": "Sus",
+            "scientificname": "Sus scrofa"
+        },
+        {
+            "name": "Indochinese Tiger",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera",
+            "scientificname": "Panthera tigris corbetti"
+        },
+        {
+            "name": "Wolf",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus"
+        },
+        {
+            "name": "Maned Wolf",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Chrysocyon",
+            "scientificname": "Chyrsocyon brachyurus"
+        },
+        {
+            "name": "Red Wolf",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus rufus"
+        },
+        {
+            "name": "Mackenzie Wolf",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis",
+            "scientificname": "Canis lupus occidentalis"
+        },
+        {
+            "name": "Zebra",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Mammalia",
+            "order": "Perissodactyla",
+            "family": "Equidae",
+            "genus": "Equus",
+            "scientificname": "Equus zebra, Equus quagga, Equus grevyi"
+        },
+        {
+            "name": "Earthworm",
+            "kingdom": "Animalia",
+            "phylum": "Annelida",
+            "classname": "Clitellata",
+            "order": "Opisthopora",
+            "family": "Limbricidae",
+            "genus": "Lumbricus",
+            "scientificname": "Lumbricina"
+        },
+        {
+            "name": "Grasshopper",
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "classname": "Insecta",
+            "order": "Orthoptera",
+            "family": "Caelifera",
+            "genus": "-",
+            "scientificname": "Caelifera"
+        },
+        {
+            "name": "Honey Bee",
+            "kingdom": "Animalia",
+            "phylum": "Arthropoda",
+            "classname": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Apidae",
+            "genus": "Apis",
+            "scientificname": "Apis mellifera"
+        },
+        {
+            "name": "Nicobar pigeon",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Columbiformes",
+            "family": "Columbidae",
+            "genus": "Caloenas",
+            "scientificname": "Caloenas nicobarica"
+        },
+        {
+            "name": "Pigeon",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "classname": "Aves",
+            "order": "Columbiformes",
+            "family": "Columbidae",
+            "genus": "Columba",
+            "scientificname": "Columba livia"
+        }
+    ]
+}

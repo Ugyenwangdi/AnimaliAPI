@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>{{animal.name}} Detail</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Adsense -->
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9785638530012233" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+
+</head>
+
+<body class="m-3">
+    <div class="container">
+        <div class="col bg-secondary text-white">
+            <h2 class="row justify-content-center text-uppercase p-4">{{animal.name}}</h2>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col">
+
+                <a href="{% url 'animals:all' %}" class="btn btn-outline-dark my-3">Go Back</a>
+
+                <div class="row align-items-center justify-content-center">
+                    <!-- <img style="max-width: 100%; max-height: 100%;" src=""> -->
+                    <div class="col-md-5 justify-content-center" style="display: grid;">
+                        <p><b>Name:</b> {{animal.name}}</p>
+                        <p><b>Kingdom:</b> {{animal.kingdom }}</p>
+                        <p><b>Phylum:</b> {{animal.phylum}}</p>
+                        <p><b>Class:</b> {{animal.classname}}</p>
+                        <p><b>Order:</b> {{animal.order}}</p>
+                        <p><b>Family:</b> {{animal.family}}</p>
+                        <p><b>Genus:</b> <i>{{animal.genus}}</i></p>
+                        <p><b>Scientific Name:</b> <i>{{animal.scientificname}}</i></p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

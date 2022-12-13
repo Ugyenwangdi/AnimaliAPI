@@ -1,0 +1,237 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AnimaliAPI</title>
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+
+    <!-- Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9785638530012233" crossorigin="anonymous"></script>
+
+
+    <style>
+        .code-block {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3px;
+            height: 75%;
+            width: 75%;
+        }
+    </style>
+    <!-- analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2R1YTN1XG7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2R1YTN1XG7');
+    </script>
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card card-body h-100  border-info" id="logo-wrapper">
+                    <img id="logo" src="{% static 'img/logo.png' %}">
+                    <hr>
+                    <h1>AnimaliAPI</h1>
+                    <p>Checkout at <a href="https://rapidapi.com/Wdzz/api/animaliapi3" target="_blank">RapidAPI</a></p>
+                    <p>By <a href="https://wulfi.herokuapp.com/about/" target="_blank">Wulfi</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card card-body h-100  border-info">
+
+                    <h4>Animals and their Scientific Names</h4>
+                    <hr>
+                    <p>Animals and all other living things that have been identified and documented are given a two-part scientific name that is unique to their species. The genus comes first, followed by a species-specific epithet in the scientific name
+                        format for animals. This is how all live animals are categorised scientifically.
+                    </p>
+
+                    <p>Who created the scientific nomenclature system?<br> Carolus (Carl) Linnaeus, a Swedish botanist, devised animal scientific name classification in the 1700s. The Linnaeus Method, or Linnaean Taxonomy, is his method of combining the
+                        genus with a species specific epithet. </p>
+
+                    <p>What are the scientific terms for trinomen and trinomina, for example?<br> Trinomen names are three-word designations for subspecies of an animal group used in zoological taxonomy. The plural of trinomen is trinomina. Panthera tigris
+                        is the scientific term for tigers, while Panthera tigris tigris is the scientific name for the Bengal Tiger subspecies. </p>
+
+                    <h4>What is an API?</h4>
+                    <hr>
+                    <p>API stands for Application Programming Interface. APIs act like building blocks, and allow you to create applications much faster. It is more efficient and convenient to use the capabilities of one of the APIs than to try to independently
+                        implement similar functionality.
+                    </p>
+                    <!-- <ul class="social-links">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><img class="social" src="{% static 'img/facebook.png' %}"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><img class="social" src="{% static 'img/twitter.png' %}"></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/" target="_blank"><img class="social" src="{% static 'img/github.png' %}"></a>
+                        </li>
+                    </ul> -->
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+                    <h5>About</h5>
+                    <hr>
+                    <p>Get the scientific name of animals.</p>
+
+                    <p>Right API for your next project. </p>
+                    <p>Query for animal's classification and their Scientific Names</p>
+
+                    <a href="{% url 'animals:all' %}" class="btn btn-outline-dark btn-md mt-4">Check animals</a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+                    {% if request.user.is_authenticated %}
+                    <p>Hello {{request.user}}</p>
+                    {% endif %}
+                    <h5>Add animal to an API?</h5>
+                    <hr>
+                    <p>If you wish to contribute to the API, contact at following address.</p>
+                    <p>Contact: wulficode@gmail.com</p>
+
+                    {% if request.user.is_authenticated %}
+                    <a href="{% url 'animals:add' %}" class="btn btn-outline-dark btn-md m-1">Add to API</a>
+                    <a href="{% url 'animals:logout' %}" class="btn btn-outline-dark btn-md m-1">Logout</a> {% else %}
+                    <a href="{% url 'animals:login' %}" class="btn btn-outline-dark btn-md" style="margin-top: 4rem;">Login</a> {% endif %}
+
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <div class="card card-body h-100  border-info">
+                    <h2>Try It</h2>
+                    <hr>
+                    <p>Try entering the name of an animal to lookup what the API returns.</p>
+
+                    <div class="row">
+                        <div class="card card-body h-100  border-info col-md-6">
+                            <form method='POST' class="form">
+                                {% csrf_token %}
+
+                                <div class="mb-3">
+                                    <label>Animal Name</label>
+                                    <input type="text" class="form-control" name="nameinput" value="{{name}}" placeholder="1">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Call the API</button>
+
+                            </form>
+
+                        </div>
+                        <div class="card card-body h-100  border-info col-md-6">
+                            <form method='POST' class="form">
+                                {% csrf_token %}
+
+                                <div class="mb-3">
+                                    <label>Request URL</label>
+                                    <input type="text" class="form-control" name="requesturl" placeholder="https://animaliapi2.p.rapidapi.com/all/{{name}}" readonly="readonly">
+                                </div>
+
+                                <div>
+                                    <p>Response</p>
+                                    {% if error %}
+                                    <p>Requested {{name}}. {{name}} {{error}}</p>
+                                    {% else %}
+                                    <pre>
+                                    <code class="json">
+                                        <span>
+                                            <p>{{response}}</p>
+                                        </span>
+                                    </code>
+                                    </pre> {% endif %}
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row" style="margin-bottom: 100px;">
+            <div class="col">
+                <div class="card card-body h-100 ">
+                    <h2>How To Use the API: </h2>
+                    <hr>
+                    <p>The following are some sample code in Python to use AnimaliAPI API using Python request. You will also be able to use other languages, refer the sample usage from <a href="https://rapidapi.com/Wdzz/api/animaliapi3/">rapidAPI</a></p>
+
+                    <div class="row code-block mb-1">
+                        <div class="card card-body h-100 col-md">
+                            <div class="mb-3">
+                                <p>To get all the animals stored in the API and their classification and Scientific names.</p>
+                                <img class="code" style="max-width: 100%; max-height: 100%;" src="{% static 'img/all.png' %}">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row code-block mb-1">
+                        <div class="card card-body h-100 col-md">
+                            <div class="mb-3">
+                                <p>To get an animal using 'id', put an integer 'id' in {id} for a valid response with values >= 1. Other values return exceptions.</p>
+                                <img class="code" style="max-width: 100%; max-height: 100%;" src="{% static 'img/id.png' %}">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row code-block mb-1">
+                        <div class="card card-body h-100 col-md">
+                            <div class="mb-3">
+                                <p>To Query for animal details using animal 'name', replace with the animal name for {name}. For a valid response, <b>Capitalize</b> the <b>First letters</b> of animal names. This will return single animal's detail as json
+                                    file. If the name is not present in the API it will return null.</p>
+                                <img class="code" style="max-width: 100%; max-height: 100%;" src="{% static 'img/name.png' %}">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="col">
+            <p class="row align-items-center justify-content-center">&#169; 2022 Wulfi</p>
+            <p style="visibility: hidden; text-align: center;">{{home.home_page_views}} views</p>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

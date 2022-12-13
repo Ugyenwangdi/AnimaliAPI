@@ -1,0 +1,1 @@
+web: gunicorn animalsapi.wsgi —log-file -

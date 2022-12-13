@@ -1,0 +1,361 @@
+Creating an Animal's API using Django rest framework. Contains their Scientific Classificatons
+
+1/ $ py -3 -m venv env
+2/ $ .\env\Scripts\activate
+3/ $ pip install django
+4/ $ pip install djangorestframework
+5/ $ django-admin startproject animalsapi
+6/ $ cd animalsapi
+7/ $ python manage.py startapp animals
+8. add the app and djangorestframework to INSTALLED_APP list in settings
+'''
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'rest_framework',
+    'animals',
+]
+'''
+9/ Create models 
+'''
+class Animal(models.Model):
+    name = models.CharField(max_length=150)
+    kingdom = models.CharField(max_length=60)
+    phylum = models.CharField(max_length=60)
+    classname = models.CharField(max_length=60)
+    order = models.CharField(max_length=60)
+    family = models.CharField(max_length=60)
+    genus = models.CharField(max_length=60)
+    scientificname = models.CharField(max_length=150)
+    
+'''
+
+10/ $ python manage.py makemigrations
+11/ $ python manage.py migrate
+12/ $ python manage.py cratesuperuser 
+
+email...wulficodewULwulfi
+
+13/ Register the models in admin.py
+'''
+from .models import Animal # , Contributor
+
+# Register your models here.
+admin.site.register(Animal)
+'''
+
+14/ Create an endpoint. open views.py and add the following
+'''
+from rest_framework import APIView
+from rest_framework.response import Response
+
+from .models import Animal
+
+# Create your views here.
+class AnimalView(APIView):
+    def get(self, request):
+        animals = Animal.objects.all()
+        return Response({"animals": animals})
+'''
+
+15/ Create urls.py inside animals folder
+'''
+from .views import AnimalView
+
+app_name = 'animals'
+
+# app_name will help us do a reverse look-up later
+
+urlpatterns = [ 
+    path('animals/', AnimalView.as_view()),
+]
+'''
+16/ Include the urls inside the main urls.py 
+
+'''
+from django.urls import path, include 
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/', include('animals.urls')),
+]
+'''
+
+17/ Now go to http://127.0.0.1:8000/api , we will see the urls we defined.
+
+Go to http://127.0.0.1:8000/api/animals to see the response. So far we have created the working endpoint
+
+18/ add some animal data from admin dashboard and see the results
+
+19/ The endpoint at this time doesn't work saying that object type is not JSON serializable. So we need to create a serializer that will convert our animals to a python list that we can return to users.
+Create a file serializers.py and add the following in it 
+
+'''
+from rest_framework import serializers
+
+
+class ArticleSerializer(serializers.Serializer):
+    name = serializers.CharField(max_length=150)
+    kingdom = serializers.CharField(max_length=60)
+    phylum = serializers.CharField(max_length=60)
+    classname = serializers.CharField(max_length=60)
+    order = serializers.CharField(max_length=60)
+    family = serializers.CharField(max_length=60)
+    genus = serializers.CharField(max_length=60)
+    scientificname = serializers.CharField(max_length=150)
+
+'''
+
+20/ Add the serializer to our views and serialize the animals. update the views 
+'''
+from django.shortcuts import render
+
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
+from .models import Animal
+from .serializers import AnimalSerializer
+
+# Create your views here.
+
+class AnimalView(APIView):
+    def get(self, request):
+        animals = Animal.objects.all()
+
+        # many param tells serializer that it will be serializing more than single animal
+        serializer = AnimalSerializer(animals, many=True)
+        return Response({"animals": serializer.data})
+'''
+
+Refresh the server and see the response in the browser
+
+21/ Create an endpoint where users will be able to create animals details so that we don't want to limit creating articles from the admin dashboard
+APIView allows us to specify multiple HTTP methods for a single class without need to create multiple classes. Add a post method inside AnimalView
+'''
+def post(self, request):
+        animal = request.data.get('animal')
+
+        # Create an article from the above data
+        serializer = AnimalSerializer(data=animal)
+        if serializer.is_valid(raise_exception=True):
+            animal_saved = serializer.save()
+        return Response({"success": "Animal '{}' created successfully".format(animal_saved.name)})
+
+'''
+
+22/ Now add the contributor_id in AnimalSerializer, and then implement the create method that tells serializer what to do when the serializer.save method is invoked
+'''
+from .models import Animal
+
+class AnimalSerializer(serializers.Serializer):
+    name = serializers.CharField(max_length=150)
+    kingdom = serializers.CharField(max_length=60)
+    phylum = serializers.CharField(max_length=60)
+    classname = serializers.CharField(max_length=60)
+    order = serializers.CharField(max_length=60)
+    family = serializers.CharField(max_length=60)
+    genus = serializers.CharField(max_length=60)
+    scientificname = serializers.CharField(max_length=150)
+    contributor_id = serializers.IntegerField()
+    
+    def create(self, validated_data):
+        return Animal.objects.create(**validated_data)
+'''
+
+23/ using postman create a new animal object with the post request and raw json data below
+'''
+{
+    "animal": {
+        "name": "Red Panda",
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "classname": "Mammalia",
+        "order": "Carnivora",
+        "family": "Ailuridae",
+        "genus": "Ailurus",
+        "scientificname": "Ailurus fulgens"
+    }
+}
+'''
+
+With that, anyone can now create 
+
+24/ Create update endpoint, update the details by sending PUT request.. First add a new path in the urlpatterns of animals
+'''
+    path('animals/<int:pk>', AnimalView.as_view()),
+
+'''
+25/ Add update method in the serializer 
+'''
+
+def update(self, instance, validated_data):
+        instance.name = validated_data.get('name', instance.name)
+        instance.kingdom = validated_data.get('kingdom', instance.kingdom)
+        instance.phylum = validated_data.get('phylum', instance.phylum)
+        instance.classname = validated_data.get('classname', instance.classname)
+        instance.order = validated_data.get('order', instance.order)
+        instance.family = validated_data.get('family', instance.family)
+        instance.genus = validated_data.get('genus', instance.genus)
+        instance.scientificname = validated_data.get('scientificname', instance.scientificname)
+        # instance.contributor_id = validated_data.get('contributor_id', instance.contributor_id)
+
+        instance.save()
+        return instance
+'''
+
+26/ For update request, define the put method in AnimalView which accepts pk parameter to query the animal 
+'''
+def put(self, request, pk):
+        saved_animal = get_object_or_404(Animal.objects.all(), pk=pk)
+        data = request.data.get('animal')
+        serializer = AnimalSerializer(instance=saved_animal, data=data, partial=True)
+        if serializer.is_valid(raise_exception=True):
+            animal_saved = serializer.save()
+        return Response({"success": "Animal '{}' updated successfully".format(animal_saved.name)})
+'''
+
+Using the postman try to update an animal detail sending put request
+
+http://127.0.0.1:8000/api/animals/2 link for put request
+
+'''
+{
+    "animal": {
+        "name": "Cheetah",
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "classname": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Acinonyx",
+        "scientificname": "Acinonyx jubatus"
+    }
+}
+
+'''
+
+27/ Let's try to implement the delete method in the APIView 
+'''
+def delete(self, request, pk):
+        # Get the object with this pk
+        animal = get_object_or_404(Animal.objects.all(), pk=pk)
+        animal.delete()
+        return Response({"message": "Animal with id '{}' has been deleted.".format(pk)}, status=204)
+'''
+
+It will delete the animal if it exists 
+
+With this, we have a functioning API where we can perform all the basic requirements of an API i.e CRUD operations using the Django Rest Framework
+
+
++++++++++++++++++++++++++++++++++++++++++++
+
+
+We can also create using the GenericAPIView in a easier way and shorter step
+
+
+
+
+????????? IF i need to check the endpoint just remove the login required for the endpoint and try it
+
+
+
+
+===================================================
+Using the endpoint to PUT single to multiple animals:
+
+For single animal: use "animal"
+{
+    "animal": 
+    {
+        "name": "Purple Emperor",
+        "kingdom": "Animalia",
+        "phylum": "Arthropoda",
+        "classname": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Nymphalidae",
+        "genus": "Apatura",
+        "scientificname": "Apatura iris"
+    }
+}
+
+
+
+For multiple animal to be added: use "animals"
+{
+    "animals": [
+    {
+        "name": "Purple Emperor",
+        "kingdom": "Animalia",
+        "phylum": "Arthropoda",
+        "classname": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Nymphalidae",
+        "genus": "Apatura",
+        "scientificname": "Apatura iris"
+    },
+    {
+        "name": "Snowy Owl",
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "classname": "Aves",
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Bubo",
+        "scientificname": "Bubo scandiacus"
+    }
+    ]
+}
+
+For authenticated users:
+To update or use the PUT method, we can either use animal name or id to get the particular animal and update the details
+https://animaliapi.herokuapp.com/api/animals/all/1
+https://animaliapi.herokuapp.com/api/animals/all/Cheetah
+
+To delete animal, use id or name to get the animal 
+https://animaliapi.herokuapp.com/api/animals/all/1
+https://animaliapi.herokuapp.com/api/animals/all/Cheetah
+
+
+
+Setting up django cores headers:
+A Django App that adds Cross-Origin Resource Sharing (CORS) headers to responses. This allows in-browser requests to your Django application from other origins.
+
+Install from pip:
+
+$ python -m pip install django-cors-headers
+
+and then add it to your installed apps:
+
+INSTALLED_APPS = [
+    ...,
+    "corsheaders",
+    ...,
+]
+
+Make sure you add the trailing comma or you might get a ModuleNotFoundError (see this blog post).
+
+You will also need to add a middleware class to listen in on responses:
+
+MIDDLEWARE = [
+    ...,
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    ...,
+]
+
+
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+
+
+######################## TODO #####################
+
+Insert the animals at the ID stored in newids file in AnimalsTest folder E:\Files\Others\Python\Django\DjangoRest
+
+Change the animal names to lower case
