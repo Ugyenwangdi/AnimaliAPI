@@ -38,7 +38,7 @@ class Animal(models.Model):
 11/ $ python manage.py migrate
 12/ $ python manage.py cratesuperuser 
 
-email...wulficodewULwulfi
+
 
 13/ Register the models in admin.py
 '''
